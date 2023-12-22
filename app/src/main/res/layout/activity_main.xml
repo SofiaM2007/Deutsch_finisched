@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+
+
+    <Button
+        android:id="@+id/onA1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="A1"
+        android:onClick="go_to_A1_main"
+        android:backgroundTint="@color/ForestGreen"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1666" />
+
+    <Button
+        android:id="@+id/onA2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="A2"
+        android:onClick="go_to_A2_main"
+        android:backgroundTint="@color/LimeGreen"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/onA1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1666" />
+
+    <Button
+        android:id="@+id/onB1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="B1"
+        android:onClick="go_to_B1_main"
+        android:backgroundTint="@color/gold"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/onA2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1666" />
+
+    <Button
+        android:id="@+id/onB2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="B2"
+        android:onClick="go_to_B2_main"
+        android:backgroundTint="@color/orange"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/onB1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1666" />
+
+    <Button
+        android:id="@+id/onC1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="C1"
+        android:onClick="go_to_C1_main"
+        android:backgroundTint="@color/OrangeRed"
+        android:textSize="34sp"
+        app:layout_constraintTop_toBottomOf="@+id/onB2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1666" />
+
+    <Button
+        android:id="@+id/onC2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="C2"
+        android:onClick="go_to_C2_main"
+        android:backgroundTint="@color/red"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/onC1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1666" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
