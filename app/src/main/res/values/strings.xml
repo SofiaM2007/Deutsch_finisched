@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Deutsch</string>
+    <string-array name="Frageworter">
+        <item>Wo</item>
+        <item>Wohin</item>
+        <item>Woher</item>
+    </string-array>
 </resources>

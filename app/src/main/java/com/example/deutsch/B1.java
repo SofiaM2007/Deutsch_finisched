@@ -26,4 +26,14 @@ public class B1 extends AppCompatActivity {
         Intent intent = new Intent(this, ArtikelActivity.class);
         startActivity(intent);
     }
+
+    public void mit_ohne_zu_aktivity(View view) {
+        Intent intent = new Intent(this, Satze_mit_ohne_zu.class); //Переход на активнось Satze_mit_ohne_zu
+        startActivity(intent);
+    }
+
+    public void go_to_konjuktiv2(View view) {
+        Intent intent = new Intent(this, Konjunktiv2.class); //Переход на активнось Konjunktiv2
+        startActivity(intent);
+    }
 }

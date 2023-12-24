@@ -26,4 +26,9 @@ public class B2 extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void go_to_konjuktiv2(View view) {
+        Intent intent = new Intent(this, Konjunktiv2.class); //Переход на активнось Konjunktiv2
+        startActivity(intent);
+    }
+
 }

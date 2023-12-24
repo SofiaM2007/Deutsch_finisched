@@ -24,8 +24,6 @@ public class A2 extends AppCompatActivity {
         m=new MainActivity();
         Log.d("In A2", "In A2");
         m.in_a2=true;
-        //m.back= ContextCompat.getColor(null, R.color.GreenYellowLite);
-       // m.butt= ContextCompat.getColor(null, R.color.ForestGreen);
     }
 
     public void go_to_artikel_aktivity(View view) {
@@ -44,8 +42,17 @@ public class A2 extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void go_to_reifolge_aktivity(View view) {
-        Intent intent = new Intent(this, ReinfolgeActivity.class); //Переход на активнось ReinfolgeActivity
+    public void mit_ohne_zu_aktivity(View view) {
+        Intent intent = new Intent(this, Satze_mit_ohne_zu.class); //Переход на активнось Satze_mit_ohne_zu
+        startActivity(intent);
+    }
+
+    public void go_to_konjuktiv2(View view) {
+        Intent intent = new Intent(this, Konjunktiv2.class); //Переход на активнось Konjunktiv2
+        startActivity(intent);
+    }
+    public void go_to_wo_woher_wohin(View view) {
+        Intent intent = new Intent(this, Frageworter.class); //Переход на активнось Frageworter
         startActivity(intent);
     }
 

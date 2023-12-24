@@ -10,30 +10,42 @@
 
     <TextView
         android:id="@+id/textViewNameB2"
-        android:layout_width="728dp"
-        android:layout_height="81dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
         android:text="B2"
+        android:textIsSelectable="false"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007" />
+        app:layout_constraintTop_toTopOf="parent" />
     <Button
         android:id="@+id/buttonArtikle"
-        android:layout_width="142dp"
-        android:layout_height="108dp"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="@color/orange"
         android:onClick="go_to_artikel_aktivity"
         android:text="Artikel"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameB2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.273" />
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/konjunktivII"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/orange"
+        android:onClick="go_to_konjuktiv2"
+        android:text="Konjunktiv II"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonArtikle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
