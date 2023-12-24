@@ -18,9 +18,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameB2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <Button
         android:id="@+id/buttonArtikle"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/orange"
@@ -33,7 +46,7 @@
         app:layout_constraintStart_toStartOf="parent" />
     <Button
         android:id="@+id/konjunktivII"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/orange"
@@ -45,7 +58,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
-
+    </LinearLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

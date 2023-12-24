@@ -18,85 +18,99 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <Button
-        android:id="@+id/buttonArtikle"
+
+    <ScrollView
         android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/ForestGreen"
-        android:onClick="go_to_artikel_aktivity"
-        android:text="Artikel"
-        android:textSize="16sp"
+        android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@+id/textViewNameA2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-    <Button
-        android:id="@+id/inf.pret.pert2"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/ForestGreen"
-        android:onClick="go_to_glagaktivity"
-        android:text="Infinitiv Pretäritum Partizip II"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/buttonArtikle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-    <Button
-        android:id="@+id/weil.dess.denn"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/ForestGreen"
-        android:onClick="go_to_SatzeMitKonjunktionent_aktivity"
-        android:text="Sätze mit weil, denn, deshalb, wenn, als, ob"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/inf.pret.pert2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-    <Button
-        android:id="@+id/mit.ohne.zu"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/ForestGreen"
-        android:onClick="mit_ohne_zu_aktivity"
-        android:text="Sätze mit und ohne zu"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/weil.dess.denn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-    <Button
-        android:id="@+id/konjunktivII"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/ForestGreen"
-        android:onClick="go_to_konjuktiv2"
-        android:text="Konjunktiv II"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/mit.ohne.zu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <Button
-        android:id="@+id/wo.woher.wohin"
-        android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/ForestGreen"
-        android:onClick="go_to_wo_woher_wohin"
-        android:text="Fragewörter: Woher? Wo? Wohin?"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/konjunktivII"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/buttonArtikle"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/ForestGreen"
+            android:onClick="go_to_artikel_aktivity"
+            android:text="Artikel"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNameA2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/inf.pret.pert2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/ForestGreen"
+            android:onClick="go_to_glagaktivity"
+            android:text="Infinitiv Pretäritum Partizip II"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/buttonArtikle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/weil.dess.denn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/ForestGreen"
+            android:onClick="go_to_SatzeMitKonjunktionent_aktivity"
+            android:text="Sätze mit weil, denn, deshalb, wenn, als, ob"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/inf.pret.pert2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/mit.ohne.zu"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/ForestGreen"
+            android:onClick="mit_ohne_zu_aktivity"
+            android:text="Sätze mit und ohne zu"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/weil.dess.denn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/konjunktivII"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/ForestGreen"
+            android:onClick="go_to_konjuktiv2"
+            android:text="Konjunktiv II"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/mit.ohne.zu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
 
+        <Button
+            android:id="@+id/wo.woher.wohin"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/ForestGreen"
+            android:onClick="go_to_wo_woher_wohin"
+            android:text="Fragewörter: Woher? Wo? Wohin?"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/konjunktivII"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

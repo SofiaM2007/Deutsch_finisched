@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -18,114 +17,102 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-        <Button
-            android:id="@+id/buttonArtikle"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_marginBottom="8dp"
-            android:backgroundTint="@color/LimeGreen"
-            android:onClick="go_to_artikel_aktivity"
-            android:text="Artikel"
-            android:textSize="20sp"
-            app:layout_constraintTop_toBottomOf="@+id/textViewNameA1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/nom_akk"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_marginBottom="8dp"
-            android:backgroundTint="@color/LimeGreen"
-            android:onClick="go_to_padezh"
-            android:text="Nom/Akk"
-            android:textSize="20sp"
-            app:layout_constraintTop_toBottomOf="@+id/buttonArtikle"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <!-- Добавьте аналогичные настройки ширины для остальных кнопок -->
-
-        <Button
-            android:id="@+id/inf.pret.pert2"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_marginBottom="8dp"
-            android:backgroundTint="@color/LimeGreen"
-            android:onClick="go_to_glagaktivity"
-            android:text="Infinitiv, Präteritum, Partizip II"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@+id/nom_akk"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/buttonPlural"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_marginBottom="8dp"
-            android:backgroundTint="@color/LimeGreen"
-            android:onClick="go_to_plurale"
-            android:text="Plural"
-            android:textSize="20sp"
-            app:layout_constraintTop_toBottomOf="@+id/inf.pret.pert2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <!-- Добавьте аналогичные настройки ширины для остальных кнопок -->
-
-        <Button
-            android:id="@+id/buttonReinfolge"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_marginBottom="8dp"
-            android:backgroundTint="@color/LimeGreen"
-            android:onClick="go_to_reifolge_aktivity"
-            android:text="Reinfolge der Wörter"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@+id/buttonPlural"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <Button
-            android:id="@+id/buttonHabenSein"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:layout_marginBottom="8dp"
-            android:backgroundTint="@color/LimeGreen"
-            android:onClick="go_to_haben_sein_aktivity"
-            android:text="haben/sein im Präteritum "
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@+id/buttonReinfolge"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/buttonKeinNicht"
+    <ScrollView
         android:layout_width="0dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/LimeGreen"
-        android:onClick="go_to_kein_nicht_aktivity"
-        android:text="kein/nicht mit Nomen"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/buttonHabenSein"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameA1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-    <Button
-            android:id="@+id/buttonSatzeMitKonjunktionen"
-            android:layout_width="0dp"
-            android:layout_height="45dp"
-            android:backgroundTint="@color/LimeGreen"
-            android:onClick="go_to_SatzeMitKonjunktionent_aktivity"
-            android:text="Sätze mit Konjunktionen"
-            android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/buttonKeinNicht"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <Button
+                android:id="@+id/buttonArtikle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/LimeGreen"
+                android:onClick="go_to_artikel_aktivity"
+                android:text="Artikel"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/nom_akk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/LimeGreen"
+                android:onClick="go_to_padezh"
+                android:text="Nom/Akk"
+                android:textSize="20sp" />
+
+            <!-- Добавьте аналогичные настройки ширины для остальных кнопок -->
+
+            <Button
+                android:id="@+id/inf.pret.pert2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/LimeGreen"
+                android:onClick="go_to_glagaktivity"
+                android:text="Infinitiv, Präteritum, Partizip II"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonPlural"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/LimeGreen"
+                android:onClick="go_to_plurale"
+                android:text="Plural"
+                android:textSize="20sp" />
+
+            <!-- Добавьте аналогичные настройки ширины для остальных кнопок -->
+
+            <Button
+                android:id="@+id/buttonReinfolge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/LimeGreen"
+                android:onClick="go_to_reifolge_aktivity"
+                android:text="Reinfolge der Wörter"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonHabenSein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/LimeGreen"
+                android:onClick="go_to_haben_sein_aktivity"
+                android:text="haben/sein im Präteritum "
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonKeinNicht"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/LimeGreen"
+                android:onClick="go_to_kein_nicht_aktivity"
+                android:text="kein/nicht mit Nomen"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/buttonSatzeMitKonjunktionen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/LimeGreen"
+                android:onClick="go_to_SatzeMitKonjunktionent_aktivity"
+                android:text="Sätze mit Konjunktionen"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
