@@ -65,4 +65,8 @@ public class A2 extends AppCompatActivity {
         m.in_adj=true;
         startActivity(intent);
     }
+    public void go_to_padezh(View view) {
+        Intent intent = new Intent(this, Padezh.class); //Переход на активнось Padezh
+        startActivity(intent);
+    }
 }

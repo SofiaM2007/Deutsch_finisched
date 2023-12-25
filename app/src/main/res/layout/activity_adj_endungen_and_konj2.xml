@@ -1,44 +1,65 @@
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/liteYelow"
-    android:orientation="vertical"
     android:id="@+id/layout"
-    android:gravity="center">
+    android:background="@color/litePink">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_centerVertical="true">
 
         <TextView
             android:id="@+id/teil1"
-            android:layout_width="173dp"
-            android:layout_height="45dp"
+            android:layout_width="160dp"
+            android:layout_height="44dp"
+            android:textSize="16sp"
             android:text="TextView" />
 
         <EditText
             android:id="@+id/answerEditText"
             android:layout_width="195dp"
             android:layout_height="match_parent"
-            android:hint="Enter Adjektiv" />
+            android:hint="Enter Adjektiv"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/teil2"
-            android:layout_width="188dp"
-            android:layout_height="45dp"
+            android:layout_width="380dp"
+            android:layout_height="55dp"
+            android:textSize="16sp"
             android:text="TextView" />
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/chek"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="checkAnswer"
-        android:text="Check" />
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
 
-</LinearLayout>
+        <Button
+            android:id="@+id/help"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:backgroundTint="@color/violet"
+            android:onClick="show_write_answer"
+            android:text="Help" />
+
+        <Button
+            android:id="@+id/chek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:onClick="checkAnswer"
+            android:backgroundTint="@color/MediumOrchid"
+            android:text="Check" />
+
+    </LinearLayout>
+
+</RelativeLayout>
