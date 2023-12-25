@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Deutsch">
         <activity
-            android:name=".Frageworter"
+            android:name=".adjEndungenAndKonj2"
             android:exported="false" />
         <activity
-            android:name=".Konjunktiv2"
+            android:name=".Frageworter"
             android:exported="false" />
         <activity
             android:name=".Satze_mit_ohne_zu"
@@ -35,9 +35,6 @@
             android:exported="false" />
         <activity
             android:name=".glagol"
-            android:exported="false" />
-        <activity
-            android:name=".Verben"
             android:exported="false" />
         <activity
             android:name=".Padezh"

@@ -11,7 +11,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    public static boolean in_adj = false;
+    public static boolean in_konj = false;
     public static boolean in_a1 = false;
     public static boolean in_a2 = false;
     public static boolean in_b1 = false;

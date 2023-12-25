@@ -128,7 +128,8 @@ public class Frageworter extends AppCompatActivity {
                 Toast.makeText(Frageworter.this, "Wähl etwas", Toast.LENGTH_SHORT).show();
             }
         } else {
-            mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.lightGreen));
+            spinner.setSelection(0);
+            mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.liteYelow));
             button.setText("Check");
             quastiongeneration();
         }

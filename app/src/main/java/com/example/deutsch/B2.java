@@ -17,6 +17,8 @@ public class B2 extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         m=new MainActivity();
         m.in_b2=true;
+        m.in_adj=false;
+        m.in_konj=false;
         //m.back= ContextCompat.getColor(null, R.color.liteorange);
         //m.butt= ContextCompat.getColor(null, R.color.orange);
     }
@@ -27,7 +29,14 @@ public class B2 extends AppCompatActivity {
     }
 
     public void go_to_konjuktiv2(View view) {
-        Intent intent = new Intent(this, Konjunktiv2.class); //Переход на активнось Konjunktiv2
+        Intent intent = new Intent(this, adjEndungenAndKonj2.class); //Переход на активнось Konjunktiv2
+        m.in_konj=true;
+        startActivity(intent);
+    }
+
+    public void go_to_adjendung(View view) {
+        Intent intent = new Intent(this, adjEndungenAndKonj2.class); //Переход на активнось adjEndungen
+        m.in_adj=true;
         startActivity(intent);
     }
 

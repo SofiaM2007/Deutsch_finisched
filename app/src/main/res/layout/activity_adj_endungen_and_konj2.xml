@@ -1,0 +1,44 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/liteYelow"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/teil1"
+            android:layout_width="173dp"
+            android:layout_height="45dp"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/answerEditText"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:hint="Enter Adjektiv" />
+
+        <TextView
+            android:id="@+id/teil2"
+            android:layout_width="188dp"
+            android:layout_height="45dp"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/chek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="checkAnswer"
+        android:text="Check" />
+
+</LinearLayout>
