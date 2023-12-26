@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Deutsch">
         <activity
+            android:name=".RichtigFalsch"
+            android:exported="false" />
+        <activity
             android:name=".adjEndungenAndKonj2"
             android:exported="false" />
         <activity

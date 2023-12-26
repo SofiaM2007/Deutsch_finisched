@@ -50,4 +50,9 @@ public class B1 extends AppCompatActivity {
         Intent intent = new Intent(this, Padezh.class); //Переход на активнось Padezh
         startActivity(intent);
     }
+
+    public void go_to_true_false(View view) {
+        Intent intent = new Intent(this, RichtigFalsch.class); //Переход на активнось Padezh
+        startActivity(intent);
+    }
 }
