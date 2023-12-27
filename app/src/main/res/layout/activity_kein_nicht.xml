@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/purple_200"
+    android:background="@color/litePurple"
     tools:context=".KeinNicht">
 
     <TextView
@@ -29,7 +29,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@color/DarkViolet"
+            android:backgroundTint="@color/MediumOrchid"
             android:onClick="checkAnswer"
             android:text="kein"
             android:textSize="20sp" />
@@ -39,7 +39,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@color/DarkViolet"
+            android:backgroundTint="@color/MediumOrchid"
             android:onClick="checkAnswer"
             android:text="nicht"
             android:textSize="20sp" />

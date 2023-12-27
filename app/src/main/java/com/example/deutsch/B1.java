@@ -37,12 +37,14 @@ public class B1 extends AppCompatActivity {
     public void go_to_konjuktiv2(View view) {
         Intent intent = new Intent(this, adjEndungenAndKonj2.class); //Переход на активнось Konjunktiv2
         m.in_konj=true;
+        m.in_adj=false;
         startActivity(intent);
     }
 
     public void go_to_adjendung(View view) {
         Intent intent = new Intent(this, adjEndungenAndKonj2.class); //Переход на активнось adjEndungen
         m.in_adj=true;
+        m.in_konj=false;
         startActivity(intent);
     }
 

@@ -188,8 +188,8 @@ public class HabenSein extends AppCompatActivity {
             questionTextView.setText(questionTextView.getText()+ " " +words[i]);
         }
 
-        habenButton.setBackgroundColor(getResources().getColor(R.color.LiteOrangeRed));
-        seinButton.setBackgroundColor(getResources().getColor(R.color.LiteOrangeRed));
+        habenButton.setBackgroundColor(getResources().getColor(R.color.MediumOrchid));
+        seinButton.setBackgroundColor(getResources().getColor(R.color.MediumOrchid));
     }
 
 }

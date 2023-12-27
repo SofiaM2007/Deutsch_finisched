@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/Pink"
+    android:background="@color/litePurple"
     android:id="@+id/Layout"
     android:padding="16dp"
     tools:context=".Padezh">
@@ -76,7 +76,7 @@
 
     <Button
         android:id="@+id/submitButton"
-        android:backgroundTint="@color/Tomato"
+        android:backgroundTint="@color/MediumOrchid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="checkAnswer"

@@ -92,7 +92,7 @@ public class glagol extends AppCompatActivity {
         if (ChekWeiter.getText() == "Weiter") {
             ChekWeiter.setText("Check");
             editText.setText("");
-            editText.setBackgroundColor((ContextCompat.getColor(glagol.this, R.color.MistyRose)));
+            editText.setBackgroundColor((ContextCompat.getColor(glagol.this, R.color.litePurple)));
             verbgeneration();
 
         } else {

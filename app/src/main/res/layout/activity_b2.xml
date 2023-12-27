@@ -71,6 +71,19 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent" />
+            <Button
+                android:id="@+id/madalsatz"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/orange"
+                android:onClick="go_to_SatzeMitKonjunktionent_aktivity"
+                android:text="Modalsätze mit dadurch, dass und indem"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/adjEndung"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
 
         </LinearLayout>
     </ScrollView>

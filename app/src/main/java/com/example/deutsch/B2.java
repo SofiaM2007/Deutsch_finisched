@@ -40,4 +40,9 @@ public class B2 extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void go_to_SatzeMitKonjunktionent_aktivity(View view) {
+        Intent intent = new Intent(this, SatzeMitKonjunktionen.class); //Переход на активнось SatzeMitKonjunktionent
+        startActivity(intent);
+    }
+
 }

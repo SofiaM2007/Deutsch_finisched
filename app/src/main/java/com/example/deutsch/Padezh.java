@@ -387,14 +387,14 @@ public class Padezh extends AppCompatActivity {
     private void loadNextQuestion() {
         char num_ans='0';
         if(m.in_a1){
-            int t=(int) (Math.random() * questionsa1.length);
-            sentens = questionsa1[t].substring(1);
-            num_ans=questionsa1[t].charAt(0);
-        }
-        else if(m.in_a2){
             int t=(int) (Math.random() * questionsa2.length);
             sentens = questionsa2[t].substring(1);
             num_ans=questionsa2[t].charAt(0);
+        }
+        else if(m.in_a2){
+            int t=(int) (Math.random() * questionsb1.length);
+            sentens = questionsb1[t].substring(1);
+            num_ans=questionsb1[t].charAt(0);
         }
         else if(m.in_b1){
             int t=(int) (Math.random() * questionsb1.length);
@@ -441,15 +441,16 @@ public class Padezh extends AppCompatActivity {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    mainLayout.setBackgroundColor(ContextCompat.getColor(Padezh.this, R.color.Pink));
+                    mainLayout.setBackgroundColor(ContextCompat.getColor(Padezh.this, R.color.litePurple));
                     loadNextQuestion();
                 }
             }, 1000);
 
         }
         else {
-            Toast.makeText(this, "Ihre Antwort ist falsch "+correctans, Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Ihre Antwort ist falsch "+correctans, Toast.LENGTH_SHORT).show();
             mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.lightRed));
+            answerRadioGroup.clearCheck();
             //submitButton.setBackgroundColor(ContextCompat.getColor(Padezh.this, R.color.lightDarkRed));
         }
     }

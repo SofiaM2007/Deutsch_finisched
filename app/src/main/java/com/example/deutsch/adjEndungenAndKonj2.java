@@ -455,7 +455,7 @@ public class adjEndungenAndKonj2 extends AppCompatActivity {
             }
         }
         else{
-            mainLayout.setBackgroundColor(ContextCompat.getColor(adjEndungenAndKonj2.this, R.color.litePink));
+            mainLayout.setBackgroundColor(ContextCompat.getColor(adjEndungenAndKonj2.this, R.color.litePurple));
             generateSentens();
             editText.setText("");
             chek.setText("Check");

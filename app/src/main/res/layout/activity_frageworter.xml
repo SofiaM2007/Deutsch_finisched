@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/liteYelow"
+    android:background="@color/litePurple"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/layout"
     tools:context=".Frageworter">
@@ -24,10 +24,10 @@
 
     <TextView
         android:id="@+id/frage"
-        android:layout_width="344dp"
-        android:layout_height="42dp"
+        android:layout_width="374dp"
+        android:layout_height="53dp"
         android:layout_below="@+id/fragewort"
-        android:layout_marginStart="0dp"
+        android:layout_marginStart="-14dp"
         android:layout_marginTop="-70dp"
         android:layout_marginEnd="71dp"
         android:layout_marginBottom="119dp"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:backgroundTint="@color/liteOrenge"
+        android:backgroundTint="@color/MediumOrchid"
         android:layout_marginTop="16dp"
         android:text="Check"
         android:onClick="checkanswer" />

@@ -111,7 +111,7 @@ public class Frageworter extends AppCompatActivity {
             correctAnswer = "Wohin";
         }
 
-        Toast.makeText(Frageworter.this, "" + sentenceNow, Toast.LENGTH_SHORT).show();
+       // Toast.makeText(Frageworter.this, "" + sentenceNow, Toast.LENGTH_SHORT).show();
         frage.setText(sentenceNow);
     }
 
@@ -129,7 +129,7 @@ public class Frageworter extends AppCompatActivity {
             }
         } else {
             spinner.setSelection(0);
-            mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.liteYelow));
+            mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.litePurple));
             button.setText("Check");
             quastiongeneration();
         }

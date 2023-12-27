@@ -30,19 +30,45 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-    <Button
-        android:id="@+id/buttonArtikle"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginBottom="8dp"
-        android:backgroundTint="@color/OrangeRed"
-        android:onClick="go_to_artikel_aktivity"
-        android:text="Artikel"
-        android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@+id/textViewNameC1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+            <Button
+                android:id="@+id/buttonArtikle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/OrangeRed"
+                android:onClick="go_to_artikel_aktivity"
+                android:text="Artikel"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/textViewNameC1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+            <Button
+                android:id="@+id/konjk1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/OrangeRed"
+                android:onClick="go_to_konjk1_aktivity"
+                android:text="Konnektoren andernfalls, folglich, außer wenn"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@+id/buttonArtikle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/konjk2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/OrangeRed"
+            android:onClick="go_to_konjk2_aktivity"
+            android:text="Konnektoren allerdings, mittlerweile, vielmehr"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/konjk1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </LinearLayout>
     </ScrollView>

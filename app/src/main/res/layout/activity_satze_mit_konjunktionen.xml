@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Pink"
+    android:background="@color/litePurple"
     android:padding="16dp"
     android:id="@+id/mainLayout"
     tools:context=".SatzeMitKonjunktionen">
@@ -19,7 +19,7 @@
         android:layout_centerVertical="true"
         android:layout_toStartOf="@id/textView2"
         android:layout_weight="1"
-        android:background="@color/liteYelow"
+        android:background="@color/perpul1"
         android:gravity="center"
         android:text="wort 1" />
 
@@ -31,7 +31,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_weight="1"
-        android:background="@color/liteOrenge"
+        android:background="@color/perpul2"
         android:gravity="center"
         android:text="wort 2" />
 
@@ -42,7 +42,7 @@
         android:layout_centerVertical="true"
         android:layout_toEndOf="@id/textView2"
         android:layout_weight="1"
-        android:background="@color/litePink"
+        android:background="@color/perpul3"
         android:gravity="center"
         android:text="word 3" />
 
@@ -53,7 +53,7 @@
         android:layout_centerVertical="true"
         android:layout_toEndOf="@id/textView3"
         android:layout_weight="1"
-        android:background="@color/litePurple"
+        android:background="@color/perpul4"
         android:gravity="center"
         android:text="wort 4" />
 
@@ -64,21 +64,17 @@
         android:layout_centerVertical="true"
         android:layout_toEndOf="@id/textView4"
         android:layout_weight="1"
-        android:background="@color/liteBlue"
+        android:background="@color/perpul5"
         android:gravity="center"
         android:text="wort 5" />
 
     <Button
         android:id="@+id/checkButton"
-        android:layout_width="676dp"
-        android:layout_height="65dp"
-        android:layout_below="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="3dp"
-        android:backgroundTint="@color/liteliteBlue"
+        android:backgroundTint="@color/litePink"
         android:onClick="checkSentence"
-        android:layout_weight="1"
         android:text="Überprüfen"
         android:textAllCaps="false"
         android:textColor="#4E342E" />

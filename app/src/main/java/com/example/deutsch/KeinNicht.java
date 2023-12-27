@@ -134,8 +134,8 @@ public class KeinNicht extends AppCompatActivity {
             questionTextView.setText(questionTextView.getText()+ " " +words[i]);
         }
 
-        keinButton.setBackgroundColor(getResources().getColor(R.color.DarkViolet));
-        nichtButton.setBackgroundColor(getResources().getColor(R.color.DarkViolet));
+        keinButton.setBackgroundColor(getResources().getColor(R.color.MediumOrchid));
+        nichtButton.setBackgroundColor(getResources().getColor(R.color.MediumOrchid));
     }
 
 }

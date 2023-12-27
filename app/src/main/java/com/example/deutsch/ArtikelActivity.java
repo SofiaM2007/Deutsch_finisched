@@ -590,7 +590,7 @@ public class ArtikelActivity extends AppCompatActivity {
 
         viewL = (ConstraintLayout) findViewById(R.id.constrainlayout);
 
-        viewL.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.PowderBlue));
+        viewL.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.litePurple));
 
         word=findViewById(R.id.word);
         word.setText("Word");
@@ -616,9 +616,9 @@ public class ArtikelActivity extends AppCompatActivity {
         if(art == '1'){
             points++;
             sore.setText(points+"");
-            derbutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.SkyBlue));
-            diebutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.SkyBlue));
-            dasbutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.SkyBlue));
+            derbutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.MediumOrchid));
+            diebutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.MediumOrchid));
+            dasbutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.MediumOrchid));
             wortgeneration();
 
         }
@@ -635,9 +635,9 @@ public class ArtikelActivity extends AppCompatActivity {
         if(art == '2'){
             points++;
             sore.setText(points+"");
-            derbutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.SkyBlue));
-            diebutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.SkyBlue));
-            dasbutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.SkyBlue));
+            derbutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.MediumOrchid));
+            diebutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.MediumOrchid));
+            dasbutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.MediumOrchid));
             wortgeneration();
         }
         else{
@@ -655,9 +655,9 @@ public class ArtikelActivity extends AppCompatActivity {
             points++;
             sore.setText(points+"");
 
-            derbutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.SkyBlue));
-            diebutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.SkyBlue));
-            dasbutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.SkyBlue));
+            derbutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.MediumOrchid));
+            diebutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.MediumOrchid));
+            dasbutt.setBackgroundColor(ContextCompat.getColor(ArtikelActivity.this, R.color.MediumOrchid));
             wortgeneration();
         }
         else{

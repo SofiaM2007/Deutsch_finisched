@@ -232,7 +232,7 @@ public class Satze_mit_ohne_zu extends AppCompatActivity {
             @Override
             public void run() {
                 genesateSatz();
-                selectedButton.setBackgroundColor(ContextCompat.getColor(Satze_mit_ohne_zu.this, R.color.Blue));
+                selectedButton.setBackgroundColor(ContextCompat.getColor(Satze_mit_ohne_zu.this, R.color.MediumOrchid));
             }
         }, 1000);
         //resetQuestion();

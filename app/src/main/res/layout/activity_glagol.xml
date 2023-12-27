@@ -1,93 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/MistyRose"
+    android:background="@color/litePurple"
     tools:context=".glagol">
-
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="266dp"
-        android:layout_height="58dp"
+        android:layout_width="275dp"
+        android:layout_height="64dp"
+        android:ellipsize="end"
+        android:singleLine="true"
         android:text="Schreib das Verb"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259" />
-
-    <TextView
-        android:id="@+id/zeit"
-        android:layout_width="224dp"
-        android:layout_height="40dp"
-        android:text="in"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.984"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.269" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Verb"
-        android:layout_width="189dp"
-        android:layout_height="43dp"
+        android:layout_width="215dp"
+        android:layout_height="64dp"
+        android:ellipsize="end"
+        android:singleLine="true"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/zeit"
-        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/textView1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.247" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/zeit"
+        android:layout_width="239dp"
+        android:layout_height="64dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="in"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@+id/Verb"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/message"
-        android:layout_width="241dp"
+        android:layout_width="0dp"
         android:layout_height="48dp"
         android:gravity="top"
         android:hint="Antwort eingeben"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.365"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556" />
-
+        app:layout_constraintBottom_toTopOf="@+id/ButtonCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zeit"
+        app:layout_constraintVertical_bias="0.5" />
 
     <Button
         android:id="@+id/ButtonCheck"
-        android:layout_width="158dp"
+        android:layout_width="0dp"
         android:layout_height="73dp"
-        android:backgroundTint="@color/Plum"
+        android:backgroundTint="@color/DarkViolet"
         android:onClick="check"
         android:text="Check"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toStartOf="@+id/ButtonHelp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/message"
-        app:layout_constraintVertical_bias="1.0" />
+
+        app:layout_constraintHorizontal_weight="3" />
 
     <Button
         android:id="@+id/ButtonHelp"
-        android:layout_width="161dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
-        android:layout_marginStart="488dp"
-        android:backgroundTint="@color/Plum"
+        android:backgroundTint="@color/MediumOrchid"
         android:onClick="help"
         android:text="Antwort zeigen"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ButtonCheck"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/message"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ButtonCheck"
+        app:layout_constraintHorizontal_weight="1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -189,4 +189,22 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="pink1">#f200b7</color>
+    <color name="pink2">#fc0fc0</color>
+    <color name="pink3">#ff27c9</color>
+    <color name="pink4">#ff38d3</color>
+    <color name="pink5">#ff45dc</color>
+
+    <color name="dark_perpul1">#9d1b9e</color>
+    <color name="dark_perpul2">#a424a4</color>
+    <color name="dark_perpul3">#ab2caa</color>
+    <color name="dark_perpul4">#b234b1</color>
+    <color name="dark_perpul5">#b93cb8</color>
+
+    <color name="perpul1">#ca63c8</color>
+    <color name="perpul2">#d784d3</color>
+    <color name="perpul3">#e2a3de</color>
+    <color name="perpul4">#edc2e9</color>
+    <color name="perpul5">#f6e0f4</color>
 </resources>

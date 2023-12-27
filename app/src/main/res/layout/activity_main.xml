@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:weightSum="6"
     android:layout_weight="1"
+    android:background="@color/litePurple"
     android:orientation="horizontal"
     tools:context=".MainActivity">
 
@@ -18,12 +19,13 @@
         android:layout_height="0dp"
         android:text="A1"
         android:onClick="go_to_A1_main"
-        android:backgroundTint="@color/ForestGreen"
+        android:backgroundTint="@color/MediumOrchid"
         android:textSize="30sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.1666" />
+        app:layout_constraintEnd_toStartOf="@+id/onA2"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="1.0" />
 
     <Button
         android:id="@+id/onA2"
@@ -31,14 +33,15 @@
         android:layout_height="0dp"
         android:text="A2"
         android:onClick="go_to_A2_main"
-        android:backgroundTint="@color/LimeGreen"
+        android:backgroundTint="@color/MediumOrchid"
         android:textSize="30sp"
-        app:layout_constraintTop_toBottomOf="@+id/onA1"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/onA1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.1666" />
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="1.0" />
 
-    <Button
+    <!--<Button
         android:id="@+id/onB1"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -89,6 +92,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.1666" />
+       -->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

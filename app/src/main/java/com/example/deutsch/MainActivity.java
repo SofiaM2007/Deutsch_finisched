@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     public static boolean in_adj = false;
     public static boolean in_konj = false;
+    public static boolean in_konjk1 = false; // konjuktoren C11
+    public static boolean in_konjk2 = false;// konjuktoren C12
     public static boolean in_a1 = false;
     public static boolean in_a2 = false;
     public static boolean in_b1 = false;
