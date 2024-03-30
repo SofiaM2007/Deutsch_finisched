@@ -20,16 +20,16 @@ public class KeinNicht extends AppCompatActivity {
             "Sie isst kein Gemüse.", "Es schneit nicht.", "Ich habe keine Geschwister.", "Du hast nicht viel Erfahrung.",
             "Wir tragen keine Jacken.", "Sie kommt nicht zur Party.", "Er macht keine Fehler.", "Ihr habt nicht viel Glück.",
             "Du kaufst keine Schuhe.", "Es regnet nicht mehr.", "Ich esse kein Fleisch.", "Sie sagt nichts.",
-            "Sie nimmt keine Medikamente.", "Er hat nicht viel Interesse.", "Wir trinken keine Milch.", "Du hast nicht viel Geduld.",
-            "Er liest keine Bücher.", "Es gibt nichts zu essen.", "Ihr fahrt kein Auto.", "Sie hat nicht viel Vertrauen.",
+            "Sie nimmt keine Medikamente.", "Er hat nicht viel Interesse.", "Wir trinken keine Milch.",
+            "Er liest keine Bücher.", "Es gibt nichts zu essen.", "Ihr fahrt kein Auto.", "Sie hat nicht viel Gemüse.",
             "Es gibt keine Probleme.", "Wir haben nicht viel Zeit.", "Er trägt keine Brille.", "Du bist nicht hier.",
             "Ich habe keinen Hunger.", "Sie hat nicht viel Erfahrung.", "Wir kaufen keine Geschenke.", "Es regnet nicht mehr.",
             "Du trinkst keinen Wein.", "Er hat nichts gesagt.", "Sie essen kein Eis.", "Ihr habt nicht viel Wissen.",
-            "Er raucht nicht.", "Wir haben nicht viel Geld.", "Es gibt keine Lösung.", "Sie hat nicht viel Geduld.",
+            "Er raucht nicht.", "Wir haben nicht viel Geld.", "Es gibt keine Lösung.", "Sie hat nicht viel Glück.",
             "Ich trage keine Uhr.", "Du hast nichts verstanden.", "Wir nehmen keine Pausen.", "Es schneit nicht mehr.",
             "Er macht keine Fehler.", "Ihr habt nicht viel Glück.", "Sie trinkt keine Limonade.", "Es regnet nicht mehr.",
             "Du isst keine Pizza.", "Er hat nichts gesagt.", "Ich kaufe keine Süßigkeiten.", "Wir haben nicht viel Zeit.",
-            "Wir machen keine Pläne.", "Sie hat nichts gehört.", "Er spielt kein Instrument.", "Ihr habt nicht viel Geduld.",
+            "Wir machen keine Pläne.", "Sie hat nichts gehört.", "Er spielt kein Instrument.", "Ihr habt nicht viel Zeit.",
             "Es gibt keine Antwort.", "Du hast nichts gesagt.", "Ich esse keine Schokolade.", "Er hat nichts verloren.",
             "Wir tragen keine Hüte.", "Sie hat nicht viel Interesse.", "Sie trinkt keinen Tee.", "Ihr habt nichts gesehen.",
             "Es gibt keine Freizeit.", "Er hat nicht viel Erfahrung.", "Ich nehme keine Medikamente.", "Du hast nichts verstanden.",
@@ -40,15 +40,15 @@ public class KeinNicht extends AppCompatActivity {
             "Wir nehmen keine Fotos.", "Er hat nicht viel Zeit.", "Er macht keine Witze.", "Ihr habt nicht viel Geduld.",
             "Du kaufst keine Kleidung.", "Es regnet nicht mehr.", "Ich trage keine Sonnenbrille.", "Sie hat nichts gesagt.",
             "Sie essen keine Suppe.", "Wir haben nicht viel Wissen.", "Er fährt keinen Bus.", "Es schneit nicht mehr.",
-            "Es gibt keine Hoffnung.", "Du hast nichts gesehen.", "Ich trinke keine Limonade.", "Er hat nichts verstanden.",
+            "Es gibt keine Kleidung.", "Du hast nichts gesehen.", "Ich trinke keine Limonade.", "Er hat nichts verstanden.",
             "Wir essen keine Pizza.", "Sie hat nichts gehört.", "Er spielt keinen Sport.", "Ihr habt nicht viel Glück.",
-            "Sie trinkt keinen Wein.", "Es regnet nicht mehr.", "Wir nehmen keine Geschenke.", "Er hat nicht viel Geduld.",
+            "Sie trinkt keinen Wein.", "Es regnet nicht mehr.", "Wir nehmen keine Geschenke.", "Er hat nicht viel Glück.",
             "Es gibt keine Antwort.", "Du hast nichts gesagt.", "Ich esse keine Schokolade.", "Wir haben nicht viel Wissen.",
             "Wir tragen keine Hüte.", "Sie hat nichts verstanden.", "Er trinkt keinen Tee.", "Ihr habt nicht viel Glück.",
             "Es gibt keine Freizeit.", "Er hat nichts gesagt.", "Ich nehme keine Medikamente.", "Du hast nicht viel Zeit.",
             "Sie liest keine Zeitung.", "Sie hat nichts gehört.", "Ich trinke keine Milch.", "Wir haben nicht viel Wissen.",
             "Wir essen keine Suppe.", "Es regnet nicht mehr.", "Du isst kein Gemüse.", "Er hat nichts verstanden.",
-            "Er spielt kein Instrument.", "Ihr habt nicht viel Geduld.", "Es gibt keine Hoffnung.", "Du hast nicht viel Zeit.",
+            "Er spielt kein Instrument.", "Ihr habt nicht viel Wein.", "Es gibt keine Bier mehr.", "Du hast nicht viel Zeit.",
             "Ich trage keine Sonnenbrille.", "Sie hat nichts gehört.", "Er trinkt keinen Kaffee.", "Er hat nichts gesagt.",
             "Wir essen keine Pizza.", "Wir haben nicht viel Wissen.", "Sie trinkt keinen Wein.", "Es schneit nicht mehr.",
             "Es gibt keine Lösung.", "Du hast nichts verstanden.", "Ich trinke keine Limonade.", "Sie hat nicht viel Erfahrung.",
@@ -66,8 +66,6 @@ public class KeinNicht extends AppCompatActivity {
             "Ich kaufe keine Süßigkeiten.", "Wir haben nicht viel Wissen.", "Sie isst kein Gemüse.", "Du hast nichts verstanden."
     };
 
-    String[] haben = {"habe", "hast", "hat", "haben", "habt", "haben"};
-    String[] sein = {"bin", "bist", "ist", "sind", "seid", "sind"};
 
     String[] words;
     private TextView questionTextView;
@@ -134,8 +132,8 @@ public class KeinNicht extends AppCompatActivity {
             questionTextView.setText(questionTextView.getText()+ " " +words[i]);
         }
 
-        keinButton.setBackgroundColor(getResources().getColor(R.color.MediumOrchid));
-        nichtButton.setBackgroundColor(getResources().getColor(R.color.MediumOrchid));
+        keinButton.setBackgroundColor(getResources().getColor(R.color.DarkBlue));
+        nichtButton.setBackgroundColor(getResources().getColor(R.color.DarkBlue));
     }
 
 }

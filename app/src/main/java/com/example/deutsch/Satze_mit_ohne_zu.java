@@ -18,7 +18,7 @@ public class Satze_mit_ohne_zu extends AppCompatActivity {
 
     String satzA2[]=new String[]{
             "Ich möchte Deutsch ___ lernen.0", "Er muss seine Hausaufgaben ___ machen.0",
-            "Wir können nicht ___ kommen.0", "Ihr dürft nicht ___ lügen.0",
+            "Wir können nicht ___ kommen.0", "Ihr dürft nicht ___ schreiben.0",
             "Ich kann schnell ___ laufen.0", "Sie darf heute fern___sehen.0",
             "Wir wollen zusammen ___ picknicken.0", "Du darfst jetzt laut ___ singen.0",
             "Ihr könnt prima ___ schwimmen.0", "Wir müssen die Fenster ___ schließen.0",
@@ -30,17 +30,17 @@ public class Satze_mit_ohne_zu extends AppCompatActivity {
             "Du kannst prima ___ fotografieren.0", "Ihr könnt gut ___ basteln.0",
             "Sie möchte nach Hause ___ schwimmen.0", "Wir dürfen heute ___ grillen.0",
             "Er kann schnell ___ lesen.0", "Ich will morgen früh ___ joggen.0",
-            "Wir müssen das Zimmer ___ aufräumen.0", "Ich möchte heute ___ einkaufen.0",
+            "Wir müssen das Zimmer auf___räumen.0", "Ich möchte heute ein___kaufen.0",
             "Ihr könnt laut ___ singen.0", "Du darfst jetzt ___ träumen.0",
-            "Wir dürfen heute ___ picknicken.0", "Ich kann gut ___ skaten.0",
+            "Wir dürfen heute ___ picknicken.0", "Ich kann gut ___ lesen.0",
             "Sie darf heute ___ shoppen.0", "Ihr könnt prima ___ jonglieren.0",
             "Ich möchte nach Hause ___ gehen.0", "Sie kann schnell ___ schwimmen.0",
-            "Wir dürfen heute ___ angeln.0", "Du darfst heute ___ fernsehen.0",
+            "Wir dürfen heute ___ shoppen.0", "Du darfst heute ___ fernsehen.0",
             "Ihr könnt schnell ___ laufen.0", "Wir können gut ___ kochen.0",
-            "Er will nach Hause ___ fahren.0", "Ich darf heute ___ ausschlafen.0",
-            "Wir müssen den Hund ___ ausführen.0", "Ihr könnt prima ___ zeichnen.0",
-            "Ich möchte nach Hause ___ gehen.0", "Sie darf heute ___ ausschlafen.0",
-            "Du darfst heute ___ fernsehen.0", "Ihr könnt laut ___ singen.0",
+            "Er will nach Hause ___ fahren.0", "Ich darf heute aus___schlafen.0",
+            "Wir müssen den Hund aus___führen.0", "Ihr könnt prima ___ zeichnen.0",
+            "Ich möchte nach Hause ___ gehen.0", "Sie darf heute auss___chlafen.0",
+            "Du darfst heute fern___sehen.0", "Ihr könnt laut ___ singen.0",
             "Ich kann gut ___ tanzen.0", "Wir dürfen heute ___ picknicken.0",
             "Er möchte nach Hause ___ gehen.0", "Sie kann gut ___ zeichnen.0",
             "Ihr könnt prima ___ schwimmen.0", "Ich möchte Deutsch ___ lernen.0",
@@ -55,12 +55,12 @@ public class Satze_mit_ohne_zu extends AppCompatActivity {
             "Er möchte nach Hause ___ fahren.0", "Ihr dürft heute ___ skifahren.0",
             "Ich liebe es, ___ lesen.1", "Er hat keine Zeit, ___ kochen.1",
             "Sie vergisst oft, ___ telefonieren.1", "Du musst, ___ frühstücken, bevor du zur Arbeit gehst.1",
-            "Es macht Spaß, ___ tanzen, wenn die Musik gut ist.1", "Sie plant, ___ reisen, um neue Länder zu entdecken.1",
+            "Es macht Spaß, ___ tanzen, wenn die Musik gut ist.1", "Sie plant es, ___ reisen, um neue Länder zu entdecken.1",
             "Wir versuchen, ___ lernen, um unsere Deutschkenntnisse zu verbessern.1",
-            "Er hat die Absicht, zu laufen, um fit ___ bleiben.1",
-            "Ich vergesse oft, ___ meine Freunde anzurufen.1", "Es ist wichtig, ___ trinken, um hydratisiert zu bleiben.1",
-            "Sie plant, zu malen, um ihre kreative Seite aus___drücken.1", "Wir versuchen, ___ verstehen, wie man dieses Problem löst.1",
-            "Du hast die Erlaubnis, ___ spielen, solange du fertig mit den Hausaufgaben bist.1", "Er hat Spaß, ___ singen.1",
+            "Er hat Lust, zu laufen, um fit ___ bleiben.1",
+            "Ich vergesse oft, ___ meine Freunde anzurufen.1", "Es ist wichtig, ___ trinken, um gesund zu bleiben.1",
+            "Sie plant, zu malen, um ihre kreative Seite ___ zeigen.1", "Wir versuchen, ___ verstehen, wie man dieses Problem löst.1",
+             "Er hat Spaß, ___ singen.1",
             "Ich denke daran, ein___kaufen.1", "Wir planen, ___ wandern.1",
             "Sie hat keine Zeit, fern___sehen.1", "Du versuchst, ___ kochen.1",
             "Es ist schön, ___ schwimmen.1", "Er vergisst oft, auf___räumen.1",
@@ -85,14 +85,14 @@ public class Satze_mit_ohne_zu extends AppCompatActivity {
             "Ich mag es, ___ telefonieren.1", "Wir versuchen, ___ zeichnen.1",
             "Es ist schön, ___ shoppen.1", "Sie vergisst oft, ___ lesen.1",
             "Du versuchst, ___ kochen.1", "Ich plane, auf___räumen.1",
-            "Er hat Spaß, ___ einkaufen.1", "Wir haben die Absicht, ___ singen.1",
+            "Er hat Spaß, ein___kaufen.1", "Wir haben die Absicht, ___ singen.1",
             "Sie versucht, ___ fotografieren.1", "Ich denke daran, ___ joggen.1",
             "Es macht Spaß, ___ verstehen.1", "Du hast die Erlaubnis, ___ tanzen.1",
             "Er hat die Absicht, ___ schreiben.1", "Ich mag es, ___ wandern.1",
             "Wir versuchen, ___ malen.1", "Es ist schön, ___ lesen.1",
             "Sie vergisst oft, ___ fernsehen.1", "Du versuchst, ___ telefonieren.1",
-            "Ich plane, ___ aufräumen.1", "Er hat Spaß, ___ kochen.1",
-            "Wir haben die Absicht, ___ joggen.1", "Sie versucht, ___ fotografieren.1",
+            "Ich plane, auf___räumen.1", "Er hat Spaß, ___ kochen.1",
+            "Wir haben Lust, ___ joggen.1", "Sie versucht, ___ fotografieren.1",
             "Ich denke daran, ___ verstehen.1", "Es macht Spaß, ___ singen.1",
             "Du hast die Erlaubnis, ___ malen.1", "Er hat die Absicht, ___ shoppen.1",
             "Ich mag es, ein___kaufen.1", "Wir versuchen, fern___sehen.1",
@@ -232,7 +232,7 @@ public class Satze_mit_ohne_zu extends AppCompatActivity {
             @Override
             public void run() {
                 genesateSatz();
-                selectedButton.setBackgroundColor(ContextCompat.getColor(Satze_mit_ohne_zu.this, R.color.MediumOrchid));
+                selectedButton.setBackgroundColor(ContextCompat.getColor(Satze_mit_ohne_zu.this, R.color.DarkBlue));
             }
         }, 1000);
         //resetQuestion();

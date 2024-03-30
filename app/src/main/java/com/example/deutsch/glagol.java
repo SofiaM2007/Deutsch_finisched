@@ -90,28 +90,28 @@ public class glagol extends AppCompatActivity {
     public void check(View view) {
 
         if (ChekWeiter.getText() == "Weiter") {
-            ChekWeiter.setText("Check");
+            ChekWeiter.setText("Überprüfen");
             editText.setText("");
-            editText.setBackgroundColor((ContextCompat.getColor(glagol.this, R.color.litePurple)));
+            editText.setBackgroundColor((ContextCompat.getColor(glagol.this, R.color.perpulBack)));
             verbgeneration();
 
         } else {
             if (m.in_a1 == true) {
                 res = Verba1[t * 3 + temp + 1];
                 if (editText.getText().toString().equalsIgnoreCase(res)) {
-                    editText.setBackgroundColor((ContextCompat.getColor(glagol.this, R.color.PaleGreen)));
+                    editText.setBackgroundColor((ContextCompat.getColor(glagol.this, R.color.liteliteGreen)));
                     ChekWeiter.setText("Weiter");
                 } else {
-                    editText.setBackgroundColor((ContextCompat.getColor(glagol.this, R.color.Tomato)));
+                    editText.setBackgroundColor((ContextCompat.getColor(glagol.this, R.color.lightred)));
                 }
             } else if (m.in_a2 == true) {
 
                 res = Verba2[t * 3 + temp + 1];
                 if (editText.getText().toString().equalsIgnoreCase(res)) {
-                    editText.setBackgroundColor((ContextCompat.getColor(glagol.this, R.color.PaleGreen)));
+                    editText.setBackgroundColor((ContextCompat.getColor(glagol.this, R.color.liteliteGreen)));
                     ChekWeiter.setText("Weiter");
                 } else {
-                    editText.setBackgroundColor((ContextCompat.getColor(glagol.this, R.color.Tomato)));
+                    editText.setBackgroundColor((ContextCompat.getColor(glagol.this, R.color.lightred)));
                 }
             }
         }

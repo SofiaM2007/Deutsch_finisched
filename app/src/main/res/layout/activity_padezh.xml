@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/litePurple"
+    android:background="@color/perpulBack"
     android:id="@+id/Layout"
     android:padding="16dp"
     tools:context=".Padezh">
@@ -76,10 +76,10 @@
 
     <Button
         android:id="@+id/submitButton"
-        android:backgroundTint="@color/MediumOrchid"
+        android:backgroundTint="@color/DarkBlue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="checkAnswer"
-        android:text="Submit"/>
+        android:text="Überprüfen"/>
 
 </LinearLayout>

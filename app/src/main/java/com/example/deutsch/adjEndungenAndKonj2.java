@@ -18,26 +18,26 @@ public class adjEndungenAndKonj2 extends AppCompatActivity {
 
 
     String sentens_adj_a2[]={       "Das ist ein .großes. (groß) Buch", "Ich trinke .heißen. (heiß) Tee",
-            "Der Hund hat einen .braunen. (braun) Fell", "Wir haben .frisches. (frisch) Obst gekauft",
+            "Der Hund hat einen .braune. (braun) Ohren", "Wir haben .frisches. (frisch) Obst gekauft",
             "Das ist ein .interessantes. (interessant) Experiment", "Mein Bruder spielt ein .schnelles. (schnell) Computerspiel",
-            "Sie trägt ein .schönes. (schön) Kleid", "Die Blumen sind .bunte. (bunt) Tulpen",
-            "Ich esse ein .leckeres. (lecker) Eis", "Das war eine .aufregende. (aufregend) Erfahrung",
-            "Die Katze hat einen .kleinen. (klein) Schwanz", "Wir haben .neue. (neu) Möbel gekauft",
+            "Sie trägt ein .schönes. (schön) Kleid", "Diese Blumen sind .bunte. (bunt) Tulpen",
+            "Ich esse ein .leckeres. (lecker) Eis", "Das war eine .spannende. (spannend) Erfahrung",
+            "Die Katze hat eine .kleine. (klein) Nase", "Wir haben .neue. (neu) Möbel gekauft",
             "Das ist ein .teures. (teur) Restaurant", "Ich höre .laute. (laut) Musik",
             "Wir haben .sauberes. (sauber) Wasser", "Das Haus hat ein .hohes. (hoh) Dach",
             "Sie trägt einen .modernen. (modern) Hut", "Ich lese ein .spannendes. (spannend) Buch",
-            "Wir essen .gesunde. (gesund) Lebensmittel", "Die Blumen haben .frische. (frisch) Blüten",
-            "Der Lehrer gibt eine .interessante. (interessant) Lektion", "Das ist ein .schickes. (schick) Auto",
+            "Wir essen .gesunde. (gesund) Lebensmittel", "Die Blumen haben .frische. (frisch) Farbe",
+            "Der Lehrer gibt eine .interessante. (interessant) Lektion", "Das ist ein .schönes. (schön) Auto",
             "Ich trage .gemütliche. (gemütlich) Schuhe", "Wir haben .gute. (gut) Freunde",
             "Das Konzert war .fantastisch. (fantastisch)", "Der Park hat .grüne. (grün) Bäume",
             "Ich habe ein .weiches. (weich) Kissen", "Die Sonne gibt .warmes. (warm) Licht",
             "Das ist ein .modernes. (modern) Smartphone", "Wir haben .gesunde. (gesund) Lebensmittel gekauft",
             "Ich trinke .fruchtigen. (fruchtig) Saft", "Das Gemälde hat .bunte. (bunt) Farben",
             "Ich höre .ruhige. (ruhie) Musik", "Der Wald hat .hohe. (hoh) Bäume",
-            "Das Buch hat eine .spannende. (spannend) Handlung", "Ich trinke .kalten. (kalt) Kaffee",
+            "Das Buch hat .spannende. (spannend) Inhalte", "Ich trinke .kalten. (kalt) Kaffee",
             "Der See hat .klare. (klar) Wasser", "Die Stadt hat .historische. (historisch) Gebäude",
             "Wir haben .frische. (frisch) Luft", "Das ist ein .gemütliches. (gemütlich) Sofa",
-            "Die Blumen sind .duftende. (duftend) Rosen", "Ich esse .knuspriges. (knusprig) Brot",
+            "Die Blumen sind .duftende. (duftend) Rosen", "Ich esse .leckeres. (lecker) Brot",
             "Das ist ein .helles. (hell) Zimmer", "Wir haben .buntes. (bunt) Papier",
             "Ich trage .moderne. (modern) Kleidung"};
     String sentens_adj_b1[]={"Das ist ein .groß. (groß) Buch", "Ich trinke .heißen. (heiß) Tee",
@@ -398,10 +398,10 @@ public class adjEndungenAndKonj2 extends AppCompatActivity {
 
     public void generateSentens(){
         if(m.in_adj){
-            editText.setHint("Enter Adjektiv");
+            editText.setHint("Gib ein Adjektiv ein");
         }
         else if(m.in_konj==true){
-            editText.setHint("Enter Verb in Konjuktiv II");
+            editText.setHint("Gib Verb in Konjuktiv II");
         }
 
         if(m.in_a2==true){
@@ -444,10 +444,10 @@ public class adjEndungenAndKonj2 extends AppCompatActivity {
     }
 
     public void checkAnswer(View view) {
-        if(chek.getText().equals("Check")){
+        if(chek.getText().equals("Überprüfen")){
             if(editText.getText().toString().equals(rightanswer)){
                 mainLayout.setBackgroundColor(ContextCompat.getColor(adjEndungenAndKonj2.this, R.color.lightGreen));
-                chek.setText("Next");
+                chek.setText("Weiter");
             }
             else{
                 mainLayout.setBackgroundColor(ContextCompat.getColor(adjEndungenAndKonj2.this, R.color.lightRed));
@@ -455,15 +455,15 @@ public class adjEndungenAndKonj2 extends AppCompatActivity {
             }
         }
         else{
-            mainLayout.setBackgroundColor(ContextCompat.getColor(adjEndungenAndKonj2.this, R.color.litePurple));
+            mainLayout.setBackgroundColor(ContextCompat.getColor(adjEndungenAndKonj2.this, R.color.perpulBack));
             generateSentens();
             editText.setText("");
-            chek.setText("Check");
+            chek.setText("Überprüfen");
         }
     }
 
     public void show_write_answer(View view){
-        Toast.makeText(adjEndungenAndKonj2.this, "Korrekte Antwort ist:"+rightanswer, Toast.LENGTH_LONG).show();
+        Toast.makeText(adjEndungenAndKonj2.this, "Richtige Antwort ist: "+rightanswer, Toast.LENGTH_LONG).show();
 
     }
 }

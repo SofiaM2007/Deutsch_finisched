@@ -11,60 +11,79 @@
         android:theme="@style/Theme.Deutsch">
         <activity
             android:name=".RichtigFalsch"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".adjEndungenAndKonj2"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".Frageworter"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".Satze_mit_ohne_zu"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".SatzeMitKonjunktionen"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".KeinNicht"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".HabenSein"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".Plural"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".ReinfolgeActivity"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".glagol"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".Padezh"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".ArtikelActivity"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".C2"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".C1"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".B2"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".B1"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".A2"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".A1"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="landscape"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

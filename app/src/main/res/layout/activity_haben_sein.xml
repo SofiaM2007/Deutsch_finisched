@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/litePurple"
+    android:background="@color/perpulBack"
     tools:context=".HabenSein">
 
     <TextView
@@ -29,7 +29,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@color/MediumOrchid"
+            android:backgroundTint="@color/DarkBlue"
             android:onClick="checkAnswer"
             android:text="haben"
             android:textSize="20sp" />
@@ -39,7 +39,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@color/MediumOrchid"
+            android:backgroundTint="@color/DarkBlue"
             android:onClick="checkAnswer"
             android:text="sein"
             android:textSize="20sp" />

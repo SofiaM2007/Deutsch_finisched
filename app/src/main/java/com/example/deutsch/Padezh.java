@@ -148,7 +148,7 @@ public class Padezh extends AppCompatActivity {
             "2Die Touristen bewundern ___ Landschaft während der Reise.",
             "3Ich höre ___ Lied auf dem Radio.",
             "3Der Künstler malt ___ Porträt im Atelier.",
-            "2Wir kaufen ___ Geschenk für die Party.",
+            "3Wir kaufen ___ Geschenk für die Party.",
             "2Die Kinder füttern ___ Enten im Park.",
             "5Er trägt ___ Mantel bei kaltem Wetter.",
             "5Die Eltern kaufen ___ neuen Tisch für die Küche.",
@@ -218,7 +218,7 @@ public class Padezh extends AppCompatActivity {
             "5Meine Eltern kaufen ___ neuen Computer.",
             "5Er isst ___ Apfel zum Frühstück.",
             "2Ich höre ___ Musik im Auto.",
-            "4Der Arzt gibt ___ Patienten Medikamente.",
+            "5Der Arzt gibt ___ Patienten Medikamente.",
             "5Die Kinder spielen mit ___ Hunden im Park.",
             "5Sie schreibt ___ Brief an ihre Freundin.",
             "3Der Koch bereitet ___ leckere Abendessen zu.",
@@ -435,13 +435,13 @@ public class Padezh extends AppCompatActivity {
 
         if (selectedAnswer.equals(correctans)) {
             //Toast.makeText(this, "Richtig!", Toast.LENGTH_SHORT).show();
-            mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.lightGreen));
+            mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.liteliteGreen));
             //submitButton.setBackgroundColor(ContextCompat.getColor(Padezh.this, R.color.LimeGreen));
             // ждёт 2 секунды
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    mainLayout.setBackgroundColor(ContextCompat.getColor(Padezh.this, R.color.litePurple));
+                    mainLayout.setBackgroundColor(ContextCompat.getColor(Padezh.this, R.color.perpulBack));
                     loadNextQuestion();
                 }
             }, 1000);
@@ -449,7 +449,7 @@ public class Padezh extends AppCompatActivity {
         }
         else {
             //Toast.makeText(this, "Ihre Antwort ist falsch "+correctans, Toast.LENGTH_SHORT).show();
-            mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.lightRed));
+            mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.lightred));
             answerRadioGroup.clearCheck();
             //submitButton.setBackgroundColor(ContextCompat.getColor(Padezh.this, R.color.lightDarkRed));
         }

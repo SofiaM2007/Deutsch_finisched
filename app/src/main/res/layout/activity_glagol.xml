@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/litePurple"
+    android:background="@color/perpulBack"
     tools:context=".glagol">
 
     <TextView
@@ -15,7 +15,7 @@
         android:ellipsize="end"
         android:singleLine="true"
         android:text="Schreib das Verb"
-        android:textSize="34sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
@@ -29,7 +29,7 @@
         android:layout_height="64dp"
         android:ellipsize="end"
         android:singleLine="true"
-        android:textSize="34sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintHorizontal_weight="1"
@@ -43,7 +43,7 @@
         android:ellipsize="end"
         android:singleLine="true"
         android:text="in"
-        android:textSize="34sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/Verb"
@@ -66,20 +66,19 @@
         android:id="@+id/ButtonCheck"
         android:layout_width="0dp"
         android:layout_height="73dp"
-        android:backgroundTint="@color/DarkViolet"
+        android:backgroundTint="@color/DarkBlue"
         android:onClick="check"
-        android:text="Check"
+        android:text="Überprüfen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/ButtonHelp"
         app:layout_constraintStart_toStartOf="parent"
-
         app:layout_constraintHorizontal_weight="3" />
 
     <Button
         android:id="@+id/ButtonHelp"
         android:layout_width="0dp"
         android:layout_height="75dp"
-        android:backgroundTint="@color/MediumOrchid"
+        android:backgroundTint="@color/MediumPurple"
         android:onClick="help"
         android:text="Antwort zeigen"
         app:layout_constraintBottom_toBottomOf="parent"

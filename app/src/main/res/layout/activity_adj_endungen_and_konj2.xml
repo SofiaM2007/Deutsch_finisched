@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/layout"
-    android:background="@color/litePurple">
+    android:background="@color/perpulBack">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,6 +15,7 @@
 
         <TextView
             android:id="@+id/teil1"
+            android:gravity="center"
             android:layout_width="160dp"
             android:layout_height="44dp"
             android:textSize="16sp"
@@ -24,13 +25,14 @@
             android:id="@+id/answerEditText"
             android:layout_width="195dp"
             android:layout_height="match_parent"
-            android:hint="Enter Adjektiv"
+            android:hint="Gib ein Adjektiv ein"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/teil2"
             android:layout_width="380dp"
             android:layout_height="55dp"
+            android:gravity="center"
             android:textSize="16sp"
             android:text="TextView" />
 
@@ -47,9 +49,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"
-            android:backgroundTint="@color/violet"
+            android:backgroundTint="@color/MediumPurple"
             android:onClick="show_write_answer"
-            android:text="Help" />
+            android:text="Hilfe" />
 
         <Button
             android:id="@+id/chek"
@@ -57,8 +59,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.75"
             android:onClick="checkAnswer"
-            android:backgroundTint="@color/MediumOrchid"
-            android:text="Check" />
+            android:backgroundTint="@color/DarkBlue"
+            android:text="Überprüfen" />
 
     </LinearLayout>
 

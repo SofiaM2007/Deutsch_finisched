@@ -21,7 +21,7 @@ public class ReinfolgeActivity extends AppCompatActivity {
 
     String sentences[]=new String[]{
             "Ich lese gern Bücher abends.", "Er fährt mit dem Bus.",
-            "Wir gehen ins Kino heute.", "Du lernst Deutsch jetzt fleißig.", "Ihr kommt später nach Hause.",
+            "Wir gehen ins Kino heute.", "Du lernst jetzt fleißig Deutsch.", "Ihr kommt später nach Hause.",
             "Das Kind schläft schon lange.",  "Ich habe im Park gespielt.", "Sie tanzt gern auf Partys.",
             "Er kauft ein neues Auto.", "Wir sehen am Wochenende Filme.", "Du kommst später zur Party.",
             "Sie schwimmt gern im See.", "Ich habe gestern viel gelernt.",
@@ -35,7 +35,7 @@ public class ReinfolgeActivity extends AppCompatActivity {
             "Sie spricht Deutsch und Englisch.", "Ich wohne in einer Wohnung.",  "Er fährt in die Stadt.",
             "Wir essen Pizza sehr gern.", "Du kommst später zur Arbeit.", "Sie mag den Sommer sehr.",
             "Ich lese Buch jeden Abend.", "Er tanzt gern auf Parties.", "Wir trinken Kaffee im Café.",
-            "Du spielst Fußball am Samstag.", "Sie schwimmt im Meer immer.",
+            "Du spielst Fußball am Samstag.", "Sie schwimmt immer im Meer.",
             "Ich esse Pizza oft abends.", "Er fährt mit dem Auto.", "Wir machen morgens gerne Yoga.",
             "Du lernst heute fleißig Deutsch.", "Sie singt in der Dusche.",  "Ich gehe oft ins Fitnessstudio.",
             "Er kommt morgen nach Hause.", "Wir sehen heute einen Film.",  "Du trinkst Tee abends gerne.",
@@ -152,16 +152,16 @@ public class ReinfolgeActivity extends AppCompatActivity {
             if (userSentence.equals(originalSentence)) {
                 //Toast.makeText(this, "Правильно!", Toast.LENGTH_LONG).show();
                 checkButton.setText("Weiter");
-                mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.GreenYellowLite));
+                mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.liteliteGreen));
             } else {
               //  Toast.makeText(this, "Неправильно. Попробуйте ещё раз.", Toast.LENGTH_LONG).show();
-                mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.litered));
+                mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.lightred));
 
             }
         }
         else{
             checkButton.setText("Überprüfen");
-            mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.litePurple));
+            mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.perpulBack));
             shuffleSentence();
         }
     }

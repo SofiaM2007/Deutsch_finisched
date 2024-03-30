@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/litePurple"
+    android:background="@color/perpulBack"
+    android:screenOrientation="landscape"
     tools:context=".A1">
 
     <TextView
@@ -35,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/MediumOrchid"
+                android:backgroundTint="@color/DarkBlue"
                 android:onClick="go_to_artikel_aktivity"
                 android:text="Artikel"
                 android:textSize="16sp" />
@@ -45,19 +46,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/MediumOrchid"
+                android:backgroundTint="@color/DarkBlue"
                 android:onClick="go_to_padezh"
                 android:text="Nom/Akk/Dat"
                 android:textSize="16sp" />
-
-            <!-- Добавьте аналогичные настройки ширины для остальных кнопок -->
 
             <Button
                 android:id="@+id/inf.pret.pert2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/MediumOrchid"
+                android:backgroundTint="@color/DarkBlue"
                 android:onClick="go_to_glagaktivity"
                 android:text="Infinitiv, Präteritum, Partizip II"
                 android:textSize="16sp" />
@@ -67,19 +66,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/MediumOrchid"
+                android:backgroundTint="@color/DarkBlue"
                 android:onClick="go_to_plurale"
                 android:text="Plural"
                 android:textSize="16sp" />
-
-            <!-- Добавьте аналогичные настройки ширины для остальных кнопок -->
 
             <Button
                 android:id="@+id/buttonReinfolge"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/MediumOrchid"
+                android:backgroundTint="@color/DarkBlue"
                 android:onClick="go_to_reifolge_aktivity"
                 android:text="Reinfolge der Wörter"
                 android:textSize="16sp" />
@@ -89,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/MediumOrchid"
+                android:backgroundTint="@color/DarkBlue"
                 android:onClick="go_to_haben_sein_aktivity"
                 android:text="haben/sein im Präteritum "
                 android:textSize="16sp" />
@@ -99,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/MediumOrchid"
+                android:backgroundTint="@color/DarkBlue"
                 android:onClick="go_to_kein_nicht_aktivity"
                 android:text="kein/nicht mit Nomen"
                 android:textSize="16sp" />
@@ -108,7 +105,7 @@
                 android:id="@+id/buttonSatzeMitKonjunktionen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/MediumOrchid"
+                android:backgroundTint="@color/DarkBlue"
                 android:onClick="go_to_SatzeMitKonjunktionent_aktivity"
                 android:text="Sätze mit Konjunktionen"
                 android:textSize="16sp" />

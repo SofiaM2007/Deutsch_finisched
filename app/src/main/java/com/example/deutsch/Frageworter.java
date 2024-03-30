@@ -23,22 +23,22 @@ public class Frageworter extends AppCompatActivity {
             "2 ist deine Mutter geboren?", "3 möchtest du im Sommer reisen?", "1 kommst du so früh?",
             "2 hast du das Auto geparkt?", "3 fährst du nach der Arbeit?", "1 weißt du, wie spät es ist?",
             "2 ist der Supermarkt hier?", "3 gehst du am Wochenende?", "1 kommst du mit dem Zug?",
-            "2 ist der Bahnhof in dieser Stadt?", "3 fliegst du in den Ferien?", "1 kennst du den Weg zur Schule?",
+            "2 ist der Bahnhof ?", "3 fliegst du in den Ferien?", "1 kennst du den Weg zur Schule?",
             "2 ist dein Handy?", "3 gehst du nach dem Essen?", "1 kommst du mit dem Bus?",
-            "2 ist die Bushaltestelle in der Nähe?", "3 fährst du morgen früh?", "1 weißt du, woher der Kaffee kommt?",
-            "2 ist dein Fahrrad?", "3 radelst du in die Stadt?", "1 kommst du so müde?", "2 ist dein Laptop?",
+            "2 ist die Bushaltestelle?", "3 fährst du morgen früh?", "1 weißt du das?",
+            "2 ist dein Fahrrad?", "1 kommst du so müde?", "2 ist dein Laptop?",
             "3 gehst du heute Nachmittag?", "1 weißt du, woher der Wind weht?", "2 ist der Park hier?",
             "3 gehst du am Samstagabend?", "1 kommst du aus dem Kino?,", "2 ist der Film gut?",
             "3 gehst du ins Theater?", "1 weißt du, woher die Blumen kommen?",
             "2 ist dein Lieblingsrestaurant?", "3 gehst du zum Arzt?", "1 kommst du so glücklich?",
-            "2 ist dein Hund?", "3 gehst du zum Sport?", "1 weißt du, woher das Geräusch kommt?",
+            "2 ist dein Hund?", "3 gehst du zum Sport?", "1 weißt du, woher ich komme?",
             "2 ist dein Lieblingslied?", "3 gehst du in die Disco?", "1 kommst du so traurig?",
-            "2 ist dein Kühlschrank?", "3 gehst du zur Party?", "1 weißt du, woher die Vögel singen?",
+            "2 ist dein Kühlschrank?", "3 gehst du zur Party?",
             "2 ist dein Lieblingsbuch?", "3 gehst du zum Konzert?", "1 kommst du mit dem Flugzeug?",
             "2 ist der Flughafen in dieser Stadt?", "3 fliegst du im Winter?", "1 weißt du, woher die Idee kam?",
-            "2 ist dein Computer?", "3 gehst du zur Konferenz?", "1 kommst du so gestresst?",
-            "2 ist dein Lieblingsessen?", "3 gehst du zum Picknick?", "1 weißt du, woher die Nachrichten kommen?",
-            "2 ist dein Fernseher?", "3 gehst du zum Entspannen?", "1 kommst du so aufgeregt?",
+            "2 ist dein Computer?", "3 gehst du zur Konferenz?", "1 kommst du so zufrieden?",
+            "2 ist dein Lieblingsessen?", "3 gehst du zum Picknick?", "1 weißt du so viel?",
+            "2 ist dein Fernseher?", "3 gehst du zum Entspannen?", "1 kommst du so froh?",
             "2 ist deine Tasche?", "3 gehst du zur Hochzeit?", "1 weißt du, woher die Informationen kommen?",
             "2 ist dein Motorrad?", "3 fährst du in die Berge?",
             "1 kommst du mit dem Schiff?", "2 ist der Hafen in dieser Stadt?", "3 fährst du im Frühling?",
@@ -49,7 +49,7 @@ public class Frageworter extends AppCompatActivity {
             "1 weißt du, woher die Träume kommen?", "2 ist dein Kissen?", "3 gehst du schlafen?",
             "1 kommst du mit dem Taxi?", "2 ist die Haltestelle hier?", "3 fährst du in den Osterferien?",
             "1 weißt du, woher die Sterne kommen?", "2 ist dein Teleskop?", "3 gehst du zur Sternwarte?",
-            "1 kommst du so verwirrt?", "2 ist dein Rucksack?", "3 gehst du wandern?",
+            "1 kommst du so unzufrieden?", "2 ist dein Rucksack?", "3 gehst du wandern?",
             "1 weißt du, woher die Geräusche kommen?", "2 ist dein Mikrofon?",
             "3 gehst du zum Konzert?", "1 kommst du so ruhig?",
             "2 ist dein Fernglas?", "3 gehst du zur Vogelbeobachtung?", "1 weißt du, woher die Geschichten kommen?"};
@@ -116,21 +116,21 @@ public class Frageworter extends AppCompatActivity {
     }
 
     public void checkanswer(View view) {
-        if (button.getText().equals("Check")) {
+        if (button.getText().equals("Überprüfen")) {
             if (selectedAnswer != null) {
                 if (selectedAnswer.equals(correctAnswer)) {
-                    mainLayout.setBackgroundColor(ContextCompat.getColor(Frageworter.this, R.color.lightGreen));
-                    button.setText("Next");
+                    mainLayout.setBackgroundColor(ContextCompat.getColor(Frageworter.this, R.color.liteliteGreen));
+                    button.setText("Weiter");
                 } else {
-                    mainLayout.setBackgroundColor(ContextCompat.getColor(Frageworter.this, R.color.lightRed));
+                    mainLayout.setBackgroundColor(ContextCompat.getColor(Frageworter.this, R.color.lightred));
                 }
             } else {
                 Toast.makeText(Frageworter.this, "Wähl etwas", Toast.LENGTH_SHORT).show();
             }
         } else {
             spinner.setSelection(0);
-            mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.litePurple));
-            button.setText("Check");
+            mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.perpulBack));
+            button.setText("Überprüfen");
             quastiongeneration();
         }
     }

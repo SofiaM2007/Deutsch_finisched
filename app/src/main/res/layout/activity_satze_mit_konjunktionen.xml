@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/litePurple"
+    android:background="@color/perpulBack"
     android:padding="16dp"
     android:id="@+id/mainLayout"
     tools:context=".SatzeMitKonjunktionen">
@@ -73,11 +73,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:backgroundTint="@color/litePink"
+        android:backgroundTint="@color/DarkBlue"
         android:onClick="checkSentence"
         android:text="Überprüfen"
-        android:textAllCaps="false"
-        android:textColor="#4E342E" />
+        android:textAllCaps="false" />
 
     <TextView
         android:id="@+id/textViewBegin"

@@ -5,6 +5,8 @@ import static java.lang.Math.min;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -408,6 +410,18 @@ public class SatzeMitKonjunktionen extends AppCompatActivity {
         setContentView(R.layout.activity_satze_mit_konjunktionen);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
+        /* final AlertDialog aboutDialog = new AlertDialog.Builder(
+                SatzeMitKonjunktionen.this).setMeunssage("fgh")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // TODO Auto-generated method stub
+                    }
+                }).create();
+
+        aboutDialog.show();*/
+
         checkButton=findViewById(R.id.checkButton);
 
         begginSentens=findViewById(R.id.textViewBegin);
@@ -552,16 +566,16 @@ public class SatzeMitKonjunktionen extends AppCompatActivity {
 
             if (userSentence.equals(originalSentence)) {
                 checkButton.setText("Weiter");
-                mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.GreenYellowLite));
+                mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.liteliteGreen));
             } else {
                // Toast.makeText(this, ""+, Toast.LENGTH_LONG).show();
-                mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.Tomato));
+                mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.lightred));
 
             }
         }
         else{
             checkButton.setText("Überprüfen");
-            mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.litePurple));
+            mainLayout.setBackgroundColor(ContextCompat.getColor(this, R.color.perpulBack));
             shuffleSentence();
         }
     }

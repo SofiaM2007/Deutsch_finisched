@@ -52,12 +52,12 @@ public class Plural extends AppCompatActivity {
 
         if (userAnswer.equalsIgnoreCase(expectedAnswer)) {
             //Toast.makeText(this, "Richtig!", Toast.LENGTH_SHORT).show();
-            m.setBackgroundColor(ContextCompat.getColor(Plural.this, R.color.springgreen));
+            m.setBackgroundColor(ContextCompat.getColor(Plural.this, R.color.liteliteGreen));
             new Handler().postDelayed(new Runnable() {
 
                 @Override
                 public void run() {
-                    m.setBackgroundColor(ContextCompat.getColor(Plural.this, R.color.litePurple));
+                    m.setBackgroundColor(ContextCompat.getColor(Plural.this, R.color.perpulBack));
                    // komment.setText("");
                     showNextQuestion();
                 }
@@ -68,7 +68,7 @@ public class Plural extends AppCompatActivity {
                 Toast.makeText(this, "Du hast einen Artikel vergessen", Toast.LENGTH_SHORT).show();
             }
             //Toast.makeText(this, "Ihre Antwort ist falsch", Toast.LENGTH_SHORT).show();
-            m.setBackgroundColor(ContextCompat.getColor(this, R.color.litered));
+            m.setBackgroundColor(ContextCompat.getColor(this, R.color.lightred));
         }
     }
 
